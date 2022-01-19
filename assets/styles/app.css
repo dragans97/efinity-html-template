@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.logo {
+    max-height: 32px;
+}
+
+.mainContainer {
+    padding-top: calc(60px + 3em);
+    padding-bottom: calc(60px + 1em);
+    background-color: #f8fafc;
+    min-height: calc(100vh - 34px);
+}
+
+.link {
+    color: rgba(255, 255, 255, .5);
+}
+
+.dropdownLink {
+    color: #212529;
+}
+
+.cartBtn {
+    margin-left: 3em;
+    display: flex;
+    align-items: center;
+    background-color: #EB3B4B;
+    border-color: #EB3B4B;
+    color: #fff !important;
+}
+
+.cartBtn:hover,
+.cartBtn:active {
+    background-color: #c5313e;
+    border-color: #c5313e;
+}
+
+
+.cartBtn svg {
+    margin-left: 0.5em;
+    margin-right: -0.25em;
+}
+
+.navbar,
+.bg-dark {
+    background-color: #343A40 !important;
+}
+
+main {
+    min-height: calc(100vh - 34px);
+    background-color: #F8FAFC;
+}
+
+.page-container {
+    padding-top: calc(58px + 3em);
+    padding-bottom: 3em;
+}
+
+.footer {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #343A40;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 9pt;
+}
+
+.notificationBar {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.page-title h1 {
+    margin-bottom: 0;
+    font-size: 16pt;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #98999B;
+}
+
+.page-title h1 span {
+    display: block;
+    font-weight: normal;
+    text-transform: lowercase;
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+    .page-title h1 {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title h1 {
+        font-size: 14pt;
+    }
+}
+
+
+/* FORM (LOGIN/REGISTER) */
+form hr{
+    width:20px;
+    border-top:3pt solid #343A40;
+    margin-bottom: 0.5em;
+}
+form h3 {
+    margin-bottom: 0;
+    font-size: 13pt;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) and (max-width: 1600px) {
+    form h3 {
+        font-size: 11.5pt;
+    }
+}
+
+@media (max-width: 768px) {
+    form h3 {
+        font-size: 12pt;
+    }
+}
+
+
+.login-btn{
+    background-color: #343A40;
+    border-color: #343A40;
+    color: #fff !important;
+    transition: all 300ms ease-in-out;
+}
+
+.login-btn:hover{
+    background-color: #1c1f22;
+    border-color: #1c1f22;
+}
+
+form label, .lost-password, .login-btn, form input::placeholder, form input[type="date"], .form-select {
+    margin-bottom: 0;
+    font-size: 10.5pt;
+    line-height: 1.2;
+    color: #212529;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1600px) {
+    form label, .lost-password, .login-btn, form input::placeholder, form input[type="date"], .form-select {
+        font-size: 8pt;
+    }
+}
+
+@media (max-width: 768px) {
+    form label, .lost-password, .login-btn, form input::placeholder, form input[type="date"], .form-select {
+        font-size: 11pt;
+    }
+}
