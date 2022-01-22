@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/font-awesome.css">
+    <!-- DODATNO UKLJUCITI SAMO ZA OVU STRANICU -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+
+
+    <!-- SEO - bilo bi dobro da se za svaku stranicu ucitava posebno description i title -->
+    <title>Single Event | eFinity - Your infinite e-solution!</title>
+    <meta name="description" content="dodati opis">
+    <meta name="keywords" content="dodati keywords">
+    <meta name="author" content="SKY Corporation / eFinity">
+    <meta name="copyright" content="Kreirala Skymedia 2022 / Sva prava zadržana_">
+    
+    <!-- OG takodje prilagoditi stranicama -->
+    <!-- dodati /rutu spram odgovarajuce stranice - tipa ako je na /events u content staviti https://efinity.rs/events itd.. -->
+    <meta property="og:url"           content="https://efinity.rs">
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="eFinity | Title stranice" />
+    <meta property="og:description"   content="dodati opis za og" />
+    <!-- ZA stranicu posebnog dogadjaja u image content bi valjalo povuci tipa sliku dogadjaja il tako nesto -->
+    <meta property="og:image"         content="assets/images/og-image.jpg"/>
+
+    <!-- OVDE CE NEGDE ICI google tag manager, analitika i fb pixel - to ce verovatno VESNA(SKY) slati da se ubaci, on moze u layout da ide, ne mora posebno za stranice -->
+</head>
+
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-aut" href="#"><img src="assets/images/efinity-logo.png" alt="eFinity logo"
+                        class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ms-auto-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- za aktivnu rutu-stranicu dodati active klasu -->
+                                <a class="nav-link active" aria-current="page" href="#" title="Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Link">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" 
+                                    title="Dropdown">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" title="Action">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" title="Another action">Another action</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" 
+                                    title="Account">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Login">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                            </svg>
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                            </svg>
+                                            Register
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                                            </svg>
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <button class="btn cartBtn" >
+                                    Korpa
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" /></svg>
+                                    <span class="badge">10</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container page-container">
+            <div class="row">
+                <div class="col-12 single-event-title mb-5">
+                    <hr>
+                        <div class="d-flex align-items-center">
+                            <h1>Edita / <span>Beogradska Arena, 31. Decembar, 2021.</span></h1>
+                            <div class="ms-auto hide-on-mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart d-inline-block me-2" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                |
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download d-inline-block ms-2" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    <hr>
+                </div>
+                <div class="col-12 select-ticket mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Izbor sedišta</h3>
+                        </div>
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12 order-lg-1 order-2">
+                                    <div class="card mb-3 ticket-category-select">
+                                        <div class="card-header">
+                                            <h3>Kategorije sedišta</h3>
+                                        </div>
+                                        <div class="card-body py-4">
+                                            <form action="">
+                                                <div class="form-group mb-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-sm-12 mb-1">
+                                                            <label for="name" class="form-label">Odaberite sektor</label>
+                                                            <select class="form-select" aria-label="Default select example" required>
+                                                                <option value="1">Nivo 200 (1,000.00)</option>
+                                                                <option value="2">Nivo 300 (2,000.00)</option>
+                                                                <option value="3">Nivo 400 (3,000.00)</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-sm-12 mb-3">
+                                                            <label for="surname" class="form-label">Broj karata</label>
+                                                            <select class="form-select" aria-label="Default select example" required>
+                                                                <option value="" selected disabled>Odaberite broj karata</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary login-btn" title="Izaberite">
+                                                                Dodaj u korpu
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle d-inline-block ms-4" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                                                  </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-4 ticket-selected-items">
+                                        <div class="card-header">
+                                            <div class="d-flex align-items-center">
+                                                <h3>Izabrana sedišta</h3>
+                                                <button class="btn btn-primary d-inline-block ms-auto">X</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body py-4">
+                                            <p>Sekcija: 421 desno, Red: G, Sediste: 3</p>
+                                            <div class="d-flex align-items-center">
+                                                <p>Nivo 200(1.000,00)</p>
+                                                <p class="ms-auto">Osnovna cena</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="mb-0">1 X 1.000,00</p>
+                                                    <!-- <p class="mb-0">2 X 1.000,00</p>
+                                                    <p class="mb-0">2 X 1.000,00</p> -->
+                                                </div>
+                                                <p class="ms-auto total-price">UKUPNO: <span>1.000,00 RSD</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="">
+                                        <button class="btn btn-primary login-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart d-inline-block me-1" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+
+                                            Pređi na korpu
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 order-lg-2 order-1 mb-3">
+                                    <div class="map-container w-100">
+                                        Interaktivna mapa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col-12 ticket-info mb-5">
+                    <h1>Edita</h1>
+
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt d-inline-block me-1" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <span>Beograd,</span> Beogradska Arena
+                    </h2>
+
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event d-inline-block me-2" viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        31. Decembar 2021.
+                    </h3>
+
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock d-inline-block me-2" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                        </svg>
+                        21:00h
+                    </h3>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi nostrum tempore, ipsam sit voluptate nihil aut ducimus veritatis, nesciunt nam voluptates doloribus. Accusamus error asperiores ipsam necessitatibus delectus corrupti.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iusto delectus fugiat quam amet debitis sed unde velit cum provident eum ipsam nihil, doloremque tempora, dolores quas exercitationem suscipit voluptate.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iusto delectus fugiat quam amet debitis sed unde velit cum provident eum ipsam nihil, doloremque tempora, dolores quas exercitationem suscipit voluptate.</p>
+                    </div>
+                </div>
+                <div class="col-12 ticket-gallery">
+                    <div class="gallery-title">
+                        <h2>Galerija</h2>
+                        <div class="gallery-blue-box"></div>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1 col-sm-12 single-news-image my-4">
+                        <div class="img-container">
+                            <div class="owl-carousel owl-theme popup-gallery" id="first">
+                                <div class="item">
+                                    <a href="https://efinity-api.cmg.rs//uploads/events/2-edita/edita.jpg" class="my-0" title="... EVENT TITLE ...">
+                                        <img src="https://efinity-api.cmg.rs//uploads/events/2-edita/edita.jpg" alt="... EVENT TITLE ..." class="w-100">
+                                    </a>
+                                </div>  
+                                <div class="item">
+                                    <a href="https://efinity-api.cmg.rs//uploads/events/3-exit-festival/festival.jpg" class="my-0" title="... EVENT TITLE ...">
+                                        <img src="https://efinity-api.cmg.rs//uploads/events/3-exit-festival/festival.jpg" alt="... EVENT TITLE ..." class="w-100">
+                                    </a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>eFinity 2022. &copy; All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- DODATNO UKLJUCITI SAMO ZA OVU STRANICU -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('#first').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            navText: [
+                "<img src='assets/images/icons/arrow-left-circle-fill.svg' />",
+                "<img src='assets/images/icons/arrow-right-circle-fill.svg' />",
+            ],
+            dots:false,
+            autoplay:false,
+            responsive:{
+                0:{
+                    items:1,
+                },
+            }
+            });
+
+
+            $('.popup-gallery').magnificPopup({
+                delegate: '.owl-item:not(.cloned) a',
+                type: 'image',
+                removalDelay: 500, 
+                callbacks: {
+                    beforeOpen: function() {
+                        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                        this.st.mainClass = this.st.el.attr('data-effect');
+                    }
+                },
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] 
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title') + '<small></small>';
+                    }
+                }
+            });
+
+        });
+
+       
+    </script>
+</body>
+
+</html>
