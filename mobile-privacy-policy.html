@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/font-awesome.css">
+
+
+    <!-- SEO - bilo bi dobro da se za svaku stranicu ucitava posebno description i title -->
+    <title>Home | eFinity - Your infinite e-solution!</title>
+    <meta name="description" content="dodati opis">
+    <meta name="keywords" content="dodati keywords">
+    <meta name="author" content="SKY Corporation / eFinity">
+    <meta name="copyright" content="Kreirala Skymedia 2022 / Sva prava zadržana_">
+    
+    <!-- OG takodje prilagoditi stranicama -->
+    <!-- dodati /rutu spram odgovarajuce stranice - tipa ako je na /events u content staviti https://efinity.rs/events itd.. -->
+    <meta property="og:url"           content="https://efinity.rs">
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="eFinity | Title stranice" />
+    <meta property="og:description"   content="dodati opis za og" />
+    <!-- ZA stranicu posebnog dogadjaja u image content bi valjalo povuci tipa sliku dogadjaja il tako nesto -->
+    <meta property="og:image"         content="assets/images/og-image.jpg"/>
+
+    <!-- OVDE CE NEGDE ICI google tag manager, analitika i fb pixel - to ce verovatno VESNA(SKY) slati da se ubaci, on moze u layout da ide, ne mora posebno za stranice -->
+</head>
+
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-aut" href="#"><img src="assets/images/efinity-logo.png" alt="eFinity logo"
+                        class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ms-auto-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- za aktivnu rutu-stranicu dodati active klasu -->
+                                <a class="nav-link active" aria-current="page" href="#" title="Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Link">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" 
+                                    title="Dropdown">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" title="Action">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" title="Another action">Another action</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" 
+                                    title="Account">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Login">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                            </svg>
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                            </svg>
+                                            Register
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                                            </svg>
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="page-container container">
+            <section class="policies">
+                <h1 class="mb-5">Privacy policy</h1>
+                <p class="mb-1">Company SKY CORPORATION DOO BELGRADE (hereinafter SKY CORPORATION) Dimitrija Tucovica 10, Belgrade, ID number: 17242628, VAT reg. number: 100835855, is member of the SIMULA DOO Novi Sad, ID number: 21249939 owner and issuer of the eFinity
+                    Mobile Application on Android and iOS mobile platforms (hereinafter eFinity Application) as well as eFinity WEB Portal http://www.efinity.rs/ (hereinafter eFinity WEB Portal).</p>
+                <p class="mb-1">SKY CORPORATION greatly appreciates its relationship with customers and is responsibly committed to managing customer information. Great attention is paid to the protection of personal information, in accordance with existing privacy laws
+                    and in accordance with internal standards and practices.</p>
+                <p class="mb-1">By downloading this application and visiting the WEB Portal, you accept the described privacy policy, so please review them carefully to find out more.</p>
+                <p class="mb-1">From time to time, we may change this privacy policy to apply new technologies, company practices, regulations or for other purposes. We will notify you of these changes and ask for your approval. The notice may be sent by email to the email
+                    address you have provided us with, or by posting notice of such changes on our site, or otherwise, in accordance with applicable law.</p>
+                <p class="mb-4">If you continue to use the Services after these changes take effect, you agree to the new Privacy Policy.</p>
+    
+                <p class="mb-2"><strong>Privacy statement</strong></p>
+                <p class="mb-1">With this privacy statement, SKY CORPORATION informs you which personal data it processes, how it processes it and for which purposes, during the activities stated in this privacy statement, i.e. by using our services or by visiting our WEB
+                    Portal.
+                </p>
+                <p class="mb-4">SKY CORPORATION collects only the necessary, basic data on the eFinity Application customers / Users and data necessary for business and informing Users in accordance with good business practices and in order to provide quality service. SKY
+                    CORPORATION gives you a choice including the ability to decide whether or not to remove them from the mailing lists used for marketing campaigns. All collected data on the eFinity Application Users / customers are strictly kept and are
+                    available only to employees who need this data to do the job. All SKY CORPORATION employees (and business partners) are responsible for adhering to the principles of privacy protection. The collected data is not given to third parties.
+                </p>
+    
+    
+                <p class="mb-2"><strong>Type of personal data</strong></p>
+                <p class="mb-1">Types of personal data we collect are: gender, name and surname, e-mail address, telephone number, country, city and address of the eFinity Application User, date of birth.</p>
+                <p class="mb-4">We do not collect particularly sensitive personal information!</p>
+    
+                <p class="mb-2"><strong>Purpose of processing </strong></p>
+                <p class="mb-4">Data is collected and processed for the needs of the eFinity Platform end Users and the provision of services by the eFinity Platform.</p>
+    
+                <p class="mb-2"><strong>Data collection and storage method</strong></p>
+                <p class="mb-1">Data collection is done through the eFinity Platform as follows:</p>
+                <p class="mb-1">1. Back Office WEB application through which the Client enters data relevant to the content within the eFinity Applications and monitors the eFinity Applications usage by the User.</p>
+                <p class="mb-4">2. Mobile applications through which data is collected for the purpose of monitoring the eFinity Applications usage. The mobile application can be used only by registered Users who receive a verification e-mail to the registered e-mail address
+                    in the eFinity Application registration form. All data is stored electronically in a secure environment and in accordance with the highest industry standards relating data access. Data can be accessed only by end Users, i.e. by Users through
+                    their mobile applications (personalized data). </p>
+    
+                <p class="mb-2"><strong>Protection of confidential transaction data when buying online</strong></p>
+                <p class="mb-1">When entering payment card data, confidential information is transmitted via the public network in a protected (encrypted) form using SSL protocols and PKI systems, as currently the most modern cryptographic technology. Data security during
+                    the purchase is guaranteed by the payment card processor, Banca Intesa ad Belgrade, so the complete billing process is performed on the bank's website. At no time is payment card information available to our system. SKY CORPORATION undertakes
+                    not to archive, in any electronic form, the data downloaded from the User of the eFinity Application related to the payment card with which the transaction is realized, especially the card number, expiration date, CVC2 and CVV number,
+                    etc.
+                </p>
+                <p class="mb-4">In case of return of goods and return of funds to the customer who previously paid with one of the payment cards, in part or in full, regardless of the reason for return, SKY CORPORATION is obliged to return only through VISA, EC / MC and
+                    Maestro payment methods, which means that the bank will, at the request of the seller, refund the funds to the cardholder's account.</p>
+    
+                <p class="mb-2"><strong>Complaint policy</strong></p>
+                <p class="mb-1">The seller is obliged to deliver the goods / product that are in accordance with the contract, in accordance with Art. 50 of the Law on Consumer Protection as well as to be responsible for non-conformity of delivered goods / products.</p>
+                <p class="mb-1">The buyer may file a complaint pursuant to Articles 52, 54, and 81 of the Law on Consumer Protection, in order to exercise the rights based on compliance, incorrectly calculated prices and other shortcomings.</p>
+                <p class="mb-1">Prices on the eFinity Mobile Application, as well as on the eFinity WEB Portal, are expressed in dinars, where VAT is included in the price and there are no hidden costs.</p>
+                <p class="mb-1">The buyer declares / files a complaint by sending an e-mail at reklamacije@efinity.rs</p>
+                <p class="mb-4">The seller is obliged to keep records of received complaints and to keep it for at least two years from the day of submitting consumer complaints. Without delay, and no later than within 8 days from the day of receipt of the complaint, respond
+                    to the consumer in writing or electronically to the complaint. The seller's response to the consumer's complaint must contain a decision on whether to accept the complaint, a statement on the consumer's request and a specific proposal
+                    and deadline for resolving the complaint. The deadline cannot be longer than 15 days. If the seller for objective reasons is not able to satisfy the consumer's request within the agreed period, he is obliged to inform the consumer about
+                    the extension of the deadline for resolving the complaint and state the deadline within which he will resolve it, as well as to obtain consumer’s consent, which he is obliged to record in the records of received complaints.</p>
+    
+                <p class="mb-2">Withdrawal from the contract</p>
+                <p class="mb-1">The contract for the sale of any goods / products does not exist between us and you until we explicitly accept your order. Therefore, with the Purchase Order Confirmation, the seller accepts the offer for concluding the contract and thus the
+                    Contract is considered concluded. To create an order, you need to follow the online purchase process and click "Pay” after entering the credit card number, date of expiry and CVC/CVV code. These Terms constitute our mutual agreement in
+                    writing. Along with the Purchase Order Confirmation, we will enclose an electronic invoice with information about your order ("electronic invoice").</p>
+                <p class="mb-1">With this type of purchase, as a buyer you have the right to change your mind, i.e. to cancel the purchase within 14 days from the day when the goods / products were delivered to you without giving a reason for withdrawal, and our obligation
+                    is to submit a withdrawal form. (statement of withdrawal) which must be signed in person.</p>
+                <p class="mb-1">When returning the goods / products, the transport costs are borne by the buyer, and SKY CORPORATION is obliged to refund the payment received from the consumer, including delivery costs, and no later than 14 days from receipt of the consumer's
+                    statement, which takes effect from the day when it was sent to us. SKY CORPORATION may postpone the refund until it receives the goods / product returned by the consumer or until the consumer provides proof that he has sent the goods /
+                    products.</p>
+                <p class="mb-1">If you have decided to cancel the purchase within 14 days, you can send the withdrawal form to the e-mail address: reklamacije@efinity.rs or send it by mail to the address: Dimitrija Tucovića no. 28a, 11000 Belgrade.</p>
+                <p class="mb-1">It is possible to return only goods / products that are unused, undamaged, and proof of payment (proof of purchase) must be attached. Upon receipt, it is determined whether the goods / product are damaged as well as their correctness. If it
+                    is determined that the goods / products are defective or damaged through the fault of the buyer, due to inadequate handling, the refund is denied, and the cost of return is borne by the buyer.</p>
+                <p class="mb-4">If the buyer realizes the right to withdraw from the Contract - it is considered that the Contract is not even concluded and only the obligations prescribed by law arise.</p>
+    
+                <p class="mb-2"><strong>eFinity application and eFinity WEB Portal</strong></p>
+                <p class="mb-1">SKY CORPORATION manages the eFinity Application and eFinity WEB Portal which offers Users the opportunity to use loyalty cards and membership cards, purchase and use tickets at events, as well as use the eFinity Application as a virtual guide
+                    when traveling on their "smart" phones and allows end Users to have SKY CORPORATION BI reports regarding the above mentioned business opportunities. The privacy statement and terms of use of the eFinity Mobile Application and eFinity WEB
+                    Portal by Users and the processing of data in this regard can be found at https://efinity.rs/rs/mobile-privacy-policy.</p>
+                <p class="mb-1">As part of the eFinity Application, you may, in accordance with our privacy statement and terms of use (https://www.efinity.rs/terms-of-use) and using the eFinity WEB Portal, publish SKY CORPORATION BI reports related to the eFinity Application
+                    which is then displayed in the Users SKY CORPORATION BI applications. Personal data provided by our clients in connection with the use of the eFinity Application and the eFinity WEB Portal (such as e-mail addresses, etc.) is used by SKY
+                    CORPORATION to implement the eFinity Application Service delivered through the eFinity Application and the eFinity WEB Portal.</p>
+                <p class="mb-1">By using or accessing the eFinity Applications, the User of the eFinity Application (hereinafter the User) agrees, voluntarily, without coercion, threat of delusion and any will, to the Privacy Policy of the eFinity Mobile Application (hereinafter
+                    the Privacy Policy).</p>
+                <p class="mb-1">SKY CORPORATION company has the right to collect, use, process all data collected within the eFinity Application which is an integral part of the Privacy Policy. SKY CORPORATION company undertakes to keep personal data of Users in accordance
+                    with the Law on Personal Data Protection ("Official Gazette of RS", No. 87/2018) (hereinafter the Law), i.e. to use it exclusively for the needs of eFinity Service and User, in accordance with the positive regulations of the Republic of
+                    Serbia.
+                </p>
+                <p class="mb-1">The User may at any time revoke the consent for data processing, which is performed without a legal basis, in writing or orally on the record, and in accordance with the Law on Personal Data Protection.</p>
+                <p class="mb-4">SKY CORPORATION is subject to misdemeanor liability if it processes data that is not allowed in accordance with the positive regulations of the Republic of Serbia.</p>
+    
+                <p class="mb-2"><strong>Data retention and use period</strong></p>
+                <p class="mb-4">We store your data during the use of the application and web portal, after which they are permanently deleted.</p>
+    
+                <p class="mb-2"><strong>Protective measures taken</strong></p>
+                <p class="mb-4">All implemented data is protected in accordance with industry standard and the use of access authentication and authorization technology. All database services, i.e. application servers use exclusively the integrated model of authentication
+                    and authorization as the highest level of security of access to data and services. At the same time, the infrastructure itself supports all the most important industry standards in the field of data security.</p>
+    
+                <p class="mb-2"><strong>Data security</strong></p>
+                <p class="mb-1">The personal data protection is done by applying appropriate organizational and technical measures. The application and Web portal use encryption technology, such as Secure Sockets Layer (SSL), for protection of your personal information during
+                    data transfer. These measures include, in particular, protection against unauthorized, unlawful or accidental access, processing, loss, use and manipulation.</p>
+                <p class="mb-1">Regardless of the efforts to continuously maintain adequately high standard of care, it cannot be excluded that the information you find with us via the Internet have been observed and used by others.</p>
+                <p class="mb-1">Please note that we do not take any responsibility for any kind of disclosure of information resulting from errors during data transmission that are not caused by us and / or unauthorized access by third parties (e.g. hacker attack on e-mail
+                    or telephone, fax interception).</p>
+                <p class="mb-1">We are committed to ensuring that data leaks are identified in advance and, if applicable, reported to our customers as necessary, as well as to the competent supervisory authority, referring to the relevant data categories affected.</p>
+                <p class="mb-1">The User agrees that SKY CORPORATION may use all data contained within the eFinity Applications, in accordance with the Law and positive regulations of the Republic of Serbia, to analyze the collected data and submit content via the eFinity
+                    WEB Portal and eFinity Applications, or provide additional services to eFinity Application and eFinity WEB Portal Users.</p>
+                <p class="mb-1">When installing each new version of the eFinity Application, the User will receive clear information on the necessary rights and consents to use the mobile phone, i.e. the associated parts of the phone (GPS sensor, etc.) which must be explicitly
+                    accepted by the User.</p>
+                <p class="mb-1">The User can at any time via the eFinity Application or through a written statement, request a change of personal data previously submitted within the eFinity Application.</p>
+                <p class="mb-1">If you have any additional questions regarding the SKY CORPORATION data protection policy, you can contact us at any time using dpo@simula.biz.</p>
+                <p class="mb-4">This Privacy Policy comes into force on August 19, 2020. and will be valid until the adoption of new ones.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>eFinity 2022. &copy; All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

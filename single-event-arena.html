@@ -109,15 +109,6 @@
                                     </li>
                                 </ul>
                             </li>
-
-
-                            <li class="nav-item">
-                                <button class="btn cartBtn" >
-                                    Korpa
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" /></svg>
-                                    <span class="badge">10</span>
-                                </button>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -153,87 +144,46 @@
                         </div>
                         <div class="card-body py-5">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12 order-lg-1 order-2">
-                                    <div class="card mb-3 ticket-category-select">
-                                        <div class="card-header">
-                                            <h3>Kategorije sedišta</h3>
-                                        </div>
-                                        <div class="card-body py-4">
-                                            <form action="">
-                                                <div class="form-group mb-3">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-sm-12 mb-1">
-                                                            <label for="name" class="form-label">Odaberite sektor</label>
-                                                            <select class="form-select" aria-label="Default select example" required>
-                                                                <option value="1">Nivo 200 (1,000.00)</option>
-                                                                <option value="2">Nivo 300 (2,000.00)</option>
-                                                                <option value="3">Nivo 400 (3,000.00)</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="col-lg-6 col-sm-12 mb-3">
-                                                            <label for="surname" class="form-label">Broj karata</label>
-                                                            <select class="form-select" aria-label="Default select example" required>
-                                                                <option value="" selected disabled>Odaberite broj karata</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <button type="submit" class="btn btn-primary login-btn" title="Izaberite">
-                                                                Dodaj u korpu
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle d-inline-block ms-4" viewBox="0 0 16 16">
-                                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                                                                  </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                <div class="col-lg-9 col-sm-12 mb-5 ">
+                                    <div class="map-container w-100 bg-primary" style="height: 500px;">
+                                        Interaktivna mapa
                                     </div>
-
+                                </div>
+                                <div class="col-lg-3 col-sm-12">
                                     <div class="card mb-4 ticket-selected-items">
                                         <div class="card-header">
                                             <div class="d-flex align-items-center">
                                                 <h3>Izabrana sedišta</h3>
-                                                <button class="btn btn-primary d-inline-block ms-auto">X</button>
                                             </div>
                                         </div>
                                         <div class="card-body py-4">
-                                            <p>Sekcija: 421 desno, Red: G, Sediste: 3</p>
-                                            <div class="d-flex align-items-center">
-                                                <p>Nivo 200(1.000,00)</p>
-                                                <p class="ms-auto">Osnovna cena</p>
-                                            </div>
+                                            <p class="mb-3">Sekcija: <br><b>421 desno, Red: G, Sediste: 3</b></p>
+                                            <p class="mb-3">Količina: <br><b>10</b></p>
+                                            <p class="mb-3">Način plaćanja: <br>
+                                                <select name="" id="" class="form-select">
+                                                    <option value="" selected disabled>odaberite vrstu kartice</option>
+                                                    <option value="">Dina</option>
+                                                    <option value="">Visa</option>
+                                                    <option value="">Master Card</option>
+                                                </select>
+                                            </p>
+                                            <p class="mb-3">Cena ulaznice: <br><b>100,00 RSD</b></p>
                                         </div>
                                         <div class="card-footer">
-                                            <div class="d-flex">
-                                                <div>
-                                                    <p class="mb-0">1 X 1.000,00</p>
-                                                    <!-- <p class="mb-0">2 X 1.000,00</p>
-                                                    <p class="mb-0">2 X 1.000,00</p> -->
-                                                </div>
-                                                <p class="ms-auto total-price">UKUPNO: <span>1.000,00 RSD</span></p>
-                                            </div>
+                                            <p class="total-price"><span>UKUPNO: </span> 1.000,00 RSD</p>
+                                            <a href="">
+                                                <button class="btn btn-primary login-btn mt-2 pb-3">
+                                                    Plaćanje
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle d-inline-block ms-2" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                                    </svg>
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
-
-                                    <a href="">
-                                        <button class="btn btn-primary login-btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart d-inline-block me-1" viewBox="0 0 16 16">
-                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                            </svg>
-
-                                            Pređi na korpu
-                                        </button>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-sm-12 order-lg-2 order-1 mb-3">
-                                    <div class="map-container w-100">
-                                        Interaktivna mapa
+                                    <div class="w-100 d-flex justify-content-end">
+                                        
                                     </div>
                                 </div>
                             </div>
