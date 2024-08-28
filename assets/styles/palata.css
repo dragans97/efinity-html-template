@@ -44,8 +44,24 @@
 .gallery-blue-box{
     background-color: #E1DCD8;
     top: 90px;
-    height: 287px;
+    /* height: 287px;
     width: 100vw;
     left: 0;
-    right: 0;
+    right: 0; */
+}
+.ticket-info h1{
+    color: #031D3C;
+}
+.text-container p, .ticket-info h2{
+color:#72787D;
+}
+.text-container button{
+    background-color: #031D3C;
+    border-color: #031D3C;
+}
+
+.text-container button:hover{
+    background-color: #E1DCD8;
+    border-color: #E1DCD8;
+    color: #72787D
 }
