@@ -1,0 +1,42 @@
+.blue-box {
+    border-top-right-radius: 120px;
+    background-color: #031D3C;
+}
+
+.blue-title{
+    color:#E1DCD8 !important;
+}
+
+.event-card{
+    border-color: #E1DCD8;
+}
+.event-card:hover button {
+    background-color: #031D3C;
+    border-color: #031D3C;
+}
+.event-card h1, .event-card h2{
+    color:#72787D;
+}
+.event-card button{
+    background-color: #031D3C;
+    border-color: #031D3C;
+}
+.event-card button:hover{
+    background-color: #E1DCD8;
+    border-color: #E1DCD8;
+}
+.card-img-top{
+    filter: none;
+    background-color: #E1DCD8;
+}
+
+.palata-logo{
+    height: 90px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 1.5em;
+}
+
+.mb-5-custom{
+    margin-bottom: 5rem !important;
+}
