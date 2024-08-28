@@ -40,3 +40,12 @@
 .mb-5-custom{
     margin-bottom: 5rem !important;
 }
+
+.gallery-blue-box{
+    background-color: #E1DCD8;
+    top: 90px;
+    height: 287px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+}

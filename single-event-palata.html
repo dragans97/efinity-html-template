@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/palata.css">
+    <link rel="stylesheet" href="assets/styles/font-awesome.css">
+    <!-- DODATNO UKLJUCITI SAMO ZA OVU STRANICU -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+
+
+    <!-- SEO - bilo bi dobro da se za svaku stranicu ucitava posebno description i title -->
+    <title>Single Event | eFinity - Your infinite e-solution!</title>
+    <meta name="description" content="dodati opis">
+    <meta name="keywords" content="dodati keywords">
+    <meta name="author" content="SKY Corporation / eFinity">
+    <meta name="copyright" content="Kreirala Skymedia 2022 / Sva prava zadržana_">
+
+    <!-- OG takodje prilagoditi stranicama -->
+    <!-- dodati /rutu spram odgovarajuce stranice - tipa ako je na /events u content staviti https://efinity.rs/events itd.. -->
+    <meta property="og:url" content="https://efinity.rs">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="eFinity | Title stranice" />
+    <meta property="og:description" content="dodati opis za og" />
+    <!-- ZA stranicu posebnog dogadjaja u image content bi valjalo povuci tipa sliku dogadjaja il tako nesto -->
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+
+    <!-- OVDE CE NEGDE ICI google tag manager, analitika i fb pixel - to ce verovatno VESNA(SKY) slati da se ubaci, on moze u layout da ide, ne mora posebno za stranice -->
+</head>
+
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-aut" href="#"><img src="assets/images/efinity-logo.png" alt="eFinity logo" class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ms-auto-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- za aktivnu rutu-stranicu dodati active klasu -->
+                                <a class="nav-link active" aria-current="page" href="#" title="Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Link">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Dropdown">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" title="Action">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" title="Another action">Another action</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Account">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Login">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                            </svg> Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                            </svg> Register
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#" title="Register">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left d-inline-block me-2" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                                            </svg> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container page-container">
+            <div class="row">
+                <div class="col-12 single-event-title">
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <h1>PLANETARIJUM</h1>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12 ticket-info mb-5">
+                    <h1>Planetarijum</h1>
+
+                    <h2 class="mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt d-inline-block me-1" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        Palata nauke - Kralja Milutina 11
+                    </h2>
+
+
+                    
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, error esse. Quasi provident neque ab quo, error qui exercitationem ratione cumque molestiae ducimus saepe aut blanditiis architecto at voluptas facilis corrupti. Harum dolor veritatis, dolorum commodi eum odio, id eos architecto, at culpa ullam earum saepe voluptas praesentium quidem! Quibusdam cupiditate quia, ipsa explicabo odio delectus perspiciatis temporibus repellat tempore aliquam! Itaque aut quae assumenda aspernatur voluptas voluptatem odit, quia unde ullam, quisquam consectetur sapiente. Accusantium nostrum necessitatibus, culpa velit adipisci possimus! Saepe libero, eligendi, accusamus, dolor ducimus sit harum asperiores illum necessitatibus tenetur praesentium debitis voluptatibus repellat fugiat minus.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam commodi est asperiores illum. Nesciunt voluptate non, earum deserunt quibusdam culpa, esse commodi nemo voluptatum quam ad placeat. Obcaecati quaerat eligendi velit illo alias consequuntur corporis neque atque reprehenderit. Eum blanditiis voluptatibus dolores provident mollitia cum, quod rem enim ratione voluptatum?</p>
+                    </div>
+                </div>
+
+                <div class="col-12 ticket-gallery mt-5">
+                    <div class="gallery-title">
+                        <h2>Galerija</h2>
+                        <div class="gallery-blue-box"></div>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1 col-sm-12 single-news-image my-4">
+                        <div class="img-container">
+                            <div class="owl-carousel owl-theme popup-gallery" id="gallery-carousel">
+                                <div class="item">
+                                    <a href="https://efinity-api.cmg.rs//uploads/events/2-edita/edita.jpg" class="my-0" title="... EVENT TITLE ...">
+                                        <img src="https://efinity-api.cmg.rs//uploads/events/2-edita/edita.jpg" alt="... EVENT TITLE ..." class="w-100">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://efinity-api.cmg.rs//uploads/events/3-exit-festival/festival.jpg" class="my-0" title="... EVENT TITLE ...">
+                                        <img src="https://efinity-api.cmg.rs//uploads/events/3-exit-festival/festival.jpg" alt="... EVENT TITLE ..." class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>eFinity 2022. &copy; All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- DODATNO UKLJUCITI SAMO ZA OVU STRANICU -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            
+
+
+            $('#gallery-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                navText: [
+                    "<img src='assets/images/icons/arrow-left-circle-fill.svg' />",
+                    "<img src='assets/images/icons/arrow-right-circle-fill.svg' />",
+                ],
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav:true,
+                    },
+                }
+            });
+
+
+            $('.popup-gallery').magnificPopup({
+                delegate: '.owl-item:not(.cloned) a',
+                type: 'image',
+                removalDelay: 500,
+                callbacks: {
+                    beforeOpen: function() {
+                        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                        this.st.mainClass = this.st.el.attr('data-effect');
+                    }
+                },
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1]
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title') + '<small></small>';
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
